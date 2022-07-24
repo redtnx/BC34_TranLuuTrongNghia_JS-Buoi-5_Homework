@@ -19,32 +19,64 @@
   </head>
   <body>
     <div class="container mt-5">
+      <h2>Bài tập 1: Quản Lý Tuyển Sinh</h2>
       <div>
-        <input placeholder="Nhập điểm chuẩn" type="number" id="diemChuan" />
-        <select id="khuVuc">
-          <option value="">Chọn khu vực</option>
-          <option value="a">Khu vực A</option>
-          <option value="b">Khu vực B</option>
-          <option value="c">Khu vực C</option>
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm chuẩn"
+          type="number"
+          id="diemChuan"
+        />
+        <select class="mt-2" id="khuVuc">
+          <option value="0">Chọn khu vực</option>
+          <option value="2">Khu vực A</option>
+          <option value="1">Khu vực B</option>
+          <option value="0.5">Khu vực C</option>
         </select>
-        <select id="doiTuong">
-          <option value="">Chọn đối tượng</option>
-          <option value="1">Đối tượng 1</option>
-          <option value="2">Đối tượng 2</option>
-          <option value="3">Đối tượng 3</option>
+        <select class="mt-2" id="doiTuong">
+          <option value="0">Chọn đối tượng</option>
+          <option value="2.5">Đối tượng 1</option>
+          <option value="1.5">Đối tượng 2</option>
+          <option value="1">Đối tượng 3</option>
         </select>
       </div>
       <div>
-        <input placeholder="Nhập điểm thi môn 1" type="number" id="diem1" />
-        <input placeholder="Nhập điểm thi môn 2" type="number" id="diem2" />
-        <input placeholder="Nhập điểm thi môn 3" type="number" id="diem3" />
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm thi môn 1"
+          type="number"
+          id="diem1"
+        />
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm thi môn 2"
+          type="number"
+          id="diem2"
+        />
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm thi môn 3"
+          type="number"
+          id="diem3"
+        />
       </div>
       <div>
         <button class="btn btn-success mt-2" id="tinhDiem">Kết quả</button>
       </div>
-      <div><p></p></div>
+      <div><p id="ketQua"></p></div>
     </div>
 
+    <div class="container mt-5">
+      <h2>Bài tập 2: Tính Tiền Điện</h2>
+      <div>
+        <input placeholder="Họ và tên chủ hộ" id="name" type="text" />
+        <input placeholder="Chỉ số điện" id="number" type="number" />
+        <div>
+          <button id="tinhTien" class="btn btn-success mt-2">Tính tiền</button>
+        </div>
+        <div><p id="thongBao"></p></div>
+      </div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -57,5 +89,7 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>
